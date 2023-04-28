@@ -150,3 +150,12 @@ describe('When next step makes', () => {
     expect(game.bottomMessage).toBe('GAME ENDS WITH A DRAW!');
   }); 
 });
+
+describe('When the game started', () => {
+  it('with a random function values can be generated between 1 and 3"'
+  , () => {
+    const game = new TicTacToe();
+    expect(game.random123()).toBeLessThanOrEqual(3);
+    expect(game.random123()).toBeGreaterThanOrEqual(1);
+  });
+});
