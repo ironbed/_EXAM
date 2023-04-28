@@ -114,4 +114,12 @@ describe('When next step makes', () => {
     game.nextStep(1,1);
     expect(game.topMessage).toBe('Player O:');
   });
+  it('and the game result is empty character, the bottom message should be empty'
+  , () => {
+    const game = new TicTacToe();
+    game.start();    
+    game.nextStep(1,1);
+    expect(game.gameResult).toBe(' ');
+    expect(game.bottomMessage).toBe('');
+  });
 });
