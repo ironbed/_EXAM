@@ -16,6 +16,11 @@ class TicTacToe {
     this.showBoard();
   }
 
+  
+  nextStep(row,col) {
+    this.board[row-1][col-1] = this.actualPlayer;
+  }
+
   showBoard() {
     let showScreen ='';
     showScreen = this.topMessage+'\n'+
