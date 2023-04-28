@@ -20,9 +20,7 @@ class TicTacToe {
   nextStep(row,col) {
     this.board[row-1][col-1] = this.actualPlayer;
 
-    if (this.actualPlayer=='X') {
-      this.topMessage = 'Player X:'
-    } else this.topMessage = 'Player O:';
+    this.topMessage = 'Player '+this.actualPlayer+':';
 
     if (this.actualPlayer=='X') this.actualPlayer = 'O'
     else this.actualPlayer = 'X';
