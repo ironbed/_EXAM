@@ -54,6 +54,14 @@ class TicTacToe {
 
   }
 
+  random123() {
+    // random value from 1 to 3
+    return Math.round(Math.random()*3+0.5);
 }
+
+}
+
+game = new TicTacToe();
+game.start();
 
 module.exports = TicTacToe;
