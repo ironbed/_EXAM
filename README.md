@@ -86,3 +86,40 @@ UAT-4.2
 Given the actual player as 'O'
 When he made the next step
 Then actual player should change to 'X'
+
+US-5:
+When next step makes the game should show updated top message.
+
+UAT-5.1
+Given the top message
+When actual player is 'X'
+Then top message should be: "Player X:"
+
+UAT-5.2
+Given the top message
+When actual player is 'O'
+Then top message should be: "Player O:"
+
+US-6
+When next step makes the game should check the board and should update bottom message with possible result of the game.
+
+UAT-6.1
+Given a function to check board
+When the game result is ' '
+Then bottom message should be empty
+
+UAT-6.2
+Given a function to check board
+When the game result is 'X'
+Then bottom message should "PLAYER X WON!"
+
+UAT-6.3
+Given a function to check board
+When the game result is 'O'
+Then bottom message should "PLAYER O WON!"
+
+UAT-6.4
+Given a function to check board
+When the game result is 'D'
+Then bottom message should "GAME ENDS WITH A DRAW!"
+
