@@ -10,4 +10,9 @@ describe('When create a TicTacToe game', () => {
     expect(game.board).not.toBeUndefined();
     expect(game.board.toString()).toBe([[' ',' ',' '],[' ',' ',' '],[' ',' ',' ']].toString());
   });
+  it('the game should have an actual Player and it should be X', () => {
+    const game = new TicTacToe();
+    expect(game.actualPlayer).not.toBeUndefined();
+    expect(game.actualPlayer).toBe('X');
+  });
 });
