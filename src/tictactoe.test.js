@@ -31,3 +31,27 @@ describe('When create a TicTacToe game', () => {
     expect(game.gameEnded).toBe(false);
   });
 });
+
+describe('When the TicTacToe game started', () => {
+  it('the game should return:\n'+
+    'Game Board Creation…\n'+
+    ' | | \n'+
+    '-+-+-\n'+
+    ' | | \n'+
+    '-+-+-\n'+
+    ' | | \n'+
+    'Board Created.\n'+
+    'The game will start with player X\n'
+  , () => {
+    const game = new TicTacToe();
+    game.start();
+    expect(game.showBoard()).toBe('Game Board Creation...\n'+
+    ' | | \n'+
+    '-+-+-\n'+
+    ' | | \n'+
+    '-+-+-\n'+
+    ' | | \n'+
+    'Board Created.\n'+
+    'The game will start with player X\n');
+  });
+});  
