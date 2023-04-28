@@ -24,7 +24,8 @@ class TicTacToe {
 
     this.topMessage = 'Player '+this.actualPlayer+':';
     this.checkBoard();
-    this.bottomMessage = '';
+    if (this.gameResult==' ') this.bottomMessage = '';
+    if (this.gameResult=='X') this.bottomMessage = 'PLAYER X WON!';
 
     if (this.actualPlayer=='X') this.actualPlayer = 'O'
     else this.actualPlayer = 'X';
