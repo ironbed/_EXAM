@@ -135,3 +135,14 @@ UAT-7.2
 Given a Step array
 When I created the game
 Then it filled 9x2 number with Random123 function
+
+US-8
+when the game started the randomly created steps should take on the board
+
+UAT-8.1
+Given the Step array
+When the steps processed
+Then the board should have values filled
+
+US-9
+When the board checked the game has to show the results 
