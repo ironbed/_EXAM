@@ -54,4 +54,15 @@ describe('When the TicTacToe game started', () => {
     'Board Created.\n'+
     'The game will start with player X\n');
   });
-});  
+});
+
+describe('At next step', () => {
+  it('when actual player is X and step made on row=1 and column=1'
+  , () => {
+    const game = new TicTacToe();
+    game.start();
+    expect(game.actualPlayer).toBe('X');
+    game.nextStep(1,1);
+    expect(game.board[1-1][1-1]).toBe('X');
+  });
+});
