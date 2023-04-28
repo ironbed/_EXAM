@@ -123,3 +123,15 @@ Given a function to check board
 When the game result is 'D'
 Then bottom message should "GAME ENDS WITH A DRAW!"
 
+US-7:
+At game creation, steps for players should created randomly
+
+UAT-7.1
+Given a Random123 function
+When it called
+Then it should return a number between 1 and 3
+
+UAT-7.2
+Given a Step array
+When I created the game
+Then it filled 9x2 number with Random123 function
