@@ -20,4 +20,9 @@ describe('When create a TicTacToe game', () => {
     expect(game.topMessage).not.toBeUndefined();
     expect(game.topMessage).toBe('Game Board Creation...');
   });
+  it('the game should have a message on the bottom with text: "Board Created.\nThe game will start with player X"', () => {
+    const game = new TicTacToe();
+    expect(game.bottomMessage).not.toBeUndefined();
+    expect(game.bottomMessage).toBe('Board Created.\nThe game will start with player X');
+  });
 });
