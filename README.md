@@ -14,12 +14,12 @@ a draw.
 🚧 US-1 : 
 The TicTacToe (game) has a board, has an actual player, a topmessage, a bottommessage and a flag to show if the game ended. 
 
-🚧 UAT-1 
+✅ UAT-1 
 Given a Tictactoe game
 When I create a new Tictactoe
 Then the result should be defined
 
-⚠ UAT-1.2
+🚧 UAT-1.2
 Given a defined Tictactoe game
 When I create the game 
 Then an empty 3x3 board should be defined
