@@ -122,4 +122,13 @@ describe('When next step makes', () => {
     expect(game.gameResult).toBe(' ');
     expect(game.bottomMessage).toBe('');
   });
+  it('and the game result is X, the bottom message should be "PLAYER X WON!"'
+  , () => {
+    const game = new TicTacToe();
+    game.start();    
+    game.gameResult = 'X';
+    game.nextStep(1,1);
+    expect(game.gameResult).toBe('X');
+    expect(game.bottomMessage).toBe('PLAYER X WON!');
+  });
 });
