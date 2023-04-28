@@ -61,4 +61,28 @@ Then the game should show the top message, the empty board and the bottom messag
 Board Created.
 The game will start with player X"
 
+US-3:
+The TicTacToe game should have a function to make next step on board with actual Player
 
+UAT-3.1
+Given a TicTacToe game
+When the actual player is 'X' and and make step to row=1 and column=1
+Then the board should change to 'X' on row=1 anc column=1
+
+UAT-3.2
+Given a TicTacToe game
+When the actual player is 'O' and and make step to row=3 and column=1
+Then the board should change to 'O' on row=3 anc column=1
+
+US-4:
+When actual Player made his step the actual Player should change
+
+UAT-4.1
+Given the actual player as 'X'
+When he made the next step
+Then actual player should change to 'O'
+
+UAT-4.2
+Given the actual player as 'O'
+When he made the next step
+Then actual player should change to 'X'
