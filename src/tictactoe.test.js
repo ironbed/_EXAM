@@ -75,3 +75,14 @@ describe('At next step', () => {
     expect(game.board[3-1][1-1]).toBe('O');
   });
 });
+
+describe('After next step made', () => {
+  it('by player X then actual player should change to O'
+  , () => {
+    const game = new TicTacToe();
+    game.start();
+    expect(game.actualPlayer).toBe('X');
+    game.nextStep(1,1);
+    expect(game.actualPlayer).toBe('O');
+  });
+});
