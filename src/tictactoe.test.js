@@ -95,3 +95,14 @@ describe('After next step made', () => {
     expect(game.actualPlayer).toBe('X');
   });
 });
+
+describe('When next step makes', () => {
+  it('by player X then top message should be "Player X:"'
+  , () => {
+    const game = new TicTacToe();
+    game.start();
+    expect(game.actualPlayer).toBe('X');
+    game.nextStep(1,1);
+    expect(game.topMessage).toBe('Player X:');
+  });
+});
