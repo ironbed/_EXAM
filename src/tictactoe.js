@@ -19,6 +19,8 @@ class TicTacToe {
   
   nextStep(row,col) {
     this.board[row-1][col-1] = this.actualPlayer;
+
+    if (this.actualPlayer=='X') this.actualPlayer = 'O';
   }
 
   showBoard() {
