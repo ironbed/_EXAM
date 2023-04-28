@@ -22,7 +22,7 @@ class TicTacToe {
 
     if (this.actualPlayer=='X') {
       this.topMessage = 'Player X:'
-    }
+    } else this.topMessage = 'Player O:';
 
     if (this.actualPlayer=='X') this.actualPlayer = 'O'
     else this.actualPlayer = 'X';
