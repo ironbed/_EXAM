@@ -1,4 +1,4 @@
-const tictactoe = require('./tictactoe');
+const TicTacToe = require('./TicTacToe');
 
 describe('When create a TicTacToe game', () => {
   it('should have defined', () => {

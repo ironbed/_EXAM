@@ -1,5 +1,7 @@
-function hello() {
-  return '';
+class TicTacToe {
+  construcor() {
+
+  }
 }
 
-module.exports = tictactoe;
+module.exports = TicTacToe;
