@@ -11,44 +11,44 @@ a draw.
 
 ## Backlog
 
-🚧 US-1 : 
+US-1 : 
 The TicTacToe (game) has a board, has an actual player, a topmessage, a bottommessage and a flag to show if the game ended. 
 
-✅ UAT-1 
+UAT-1 
 Given a Tictactoe game
 When I create a new Tictactoe
 Then the result should be defined
 
-✅ UAT-1.2
+UAT-1.2
 Given a defined Tictactoe game
 When I create the game 
 Then an empty 3x3 board should be defined
 
-🚧 UAT-1.3
+UAT-1.3
 Given a defined Tictactoe game
 When I create the game 
 Then the actual Player should be defined and should be X
 
-⚠ UAT-1.4
+UAT-1.4
 Given a defined Tictactoe game
 When I create the game 
 Then it should have a message on the top with starting text: "Game Board Creation..."
 
-⚠ UAT-1.5
+UAT-1.5
 Given a defined Tictactoe game
 When I create the game 
 Then it should have a message on the bottom with starting text: 
 "Board Created.\nThe game will start with player X"
 
-⚠ UAT-1.6
+UAT-1.6
 Given a defined Tictactoe game
 When I create the game 
 Then it should have a flag to show the game ended with "false" value
 
-⚠ US-2:
+US-2:
 The TictacToe game should show an empty board with starting messages when the game started.
 
-⚠ UAT-2.1:
+UAT-2.1:
 Given a TictTactoe game
 When the game started
 Then the game should show the top message, the empty board and the bottom message like this:
