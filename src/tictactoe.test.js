@@ -1,7 +1,8 @@
 const tictactoe = require('./tictactoe');
 
-describe('Tictactoe', () => {
-  it('should return hello', () => {
-    expect(tictactoe()).toBe('hello');
+describe('When create a TicTacToe game', () => {
+  it('should have defined', () => {
+    const game = new TicTacToe();
+    expect(game).not.toBeUndefined();
   });
 });
