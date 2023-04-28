@@ -19,12 +19,12 @@ Given a Tictactoe game
 When I create a new Tictactoe
 Then the result should be defined
 
-🚧 UAT-1.2
+✅ UAT-1.2
 Given a defined Tictactoe game
 When I create the game 
 Then an empty 3x3 board should be defined
 
-⚠ UAT-1.3
+🚧 UAT-1.3
 Given a defined Tictactoe game
 When I create the game 
 Then the actual Player should be defined and should be X

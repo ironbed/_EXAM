@@ -1,5 +1,7 @@
 class TicTacToe {
-  construcor() {
+  board;
+  constructor() {
+    this.board = [[' ',' ',' '],[' ',' ',' '],[' ',' ',' ']];
 
   }
 }
