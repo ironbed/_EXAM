@@ -65,4 +65,13 @@ describe('At next step', () => {
     game.nextStep(1,1);
     expect(game.board[1-1][1-1]).toBe('X');
   });
+  it('when actual player is O and step made on row=2 and column=2'
+  , () => {
+    const game = new TicTacToe();
+    game.start();
+    game.actualPlayer = 'O';
+    expect(game.actualPlayer).toBe('O');
+    game.nextStep(3,1);
+    expect(game.board[3-1][1-1]).toBe('O');
+  });
 });
