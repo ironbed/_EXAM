@@ -25,4 +25,9 @@ describe('When create a TicTacToe game', () => {
     expect(game.bottomMessage).not.toBeUndefined();
     expect(game.bottomMessage).toBe('Board Created.\nThe game will start with player X');
   });
+  it('the game should have a flag to show the game ended with ', () => {
+    const game = new TicTacToe();
+    expect(game.gameEnded).not.toBeUndefined();
+    expect(game.gameEnded).toBe(false);
+  });
 });
